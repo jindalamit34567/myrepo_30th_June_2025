@@ -7,3 +7,8 @@ resource_group_name = var.resource_group_name
 allocation_method = var.allocation_method
 
 }
+
+resource "azurerm_resource_group" "example" {
+  name     = "example-resources"
+  location = "West Europe"
+}
